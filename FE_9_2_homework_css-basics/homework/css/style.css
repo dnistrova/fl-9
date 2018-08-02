@@ -82,7 +82,7 @@ a.text::after {
 	vertical-align: super;
     font-size: smaller;
 }
-.gallery-container .box:nth-child(odd) {
+.blocks .gallery-container .box:nth-child(odd) {
     background-color: #F5F5F5;
 }
 .boxes.gallery-container .box p:first-letter {
