@@ -88,6 +88,11 @@ a.text::after {
 .boxes.gallery-container .box p:first-letter {
     color: black;
 }
+footer p:first-letter {
+    font-size: 16px;
+    font-weight: 300;
+    color: #373a3c;
+}
 .tm-sidebar li {
 	border-bottom: silver 2px dotted;
 }
