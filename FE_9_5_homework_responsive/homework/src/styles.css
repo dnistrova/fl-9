@@ -139,15 +139,13 @@ img {
 	body {
 		background-color: var(--bg-color--light);
 	}
-	h1, h2 {
-		color: var(--article-title-dark);
-	}
 	h1 {
+		color: var(--article-title-dark);
 		margin: 200px 5px 100px 5px;
 	}
 	h2 {
-		color: var(--article-title-dark);
-		background: linear-gradient(to right, #000, #000);
+		color: var(--thumbnail-title);
+		background: linear-gradient(to right, #484747, #484747);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
