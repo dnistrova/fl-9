@@ -1,0 +1,196 @@
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+
+  /* These styles are needed only for media query max-width: 575px */
+
+  /* The 'Up' button (circle button at right bottom corner) */
+  --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+  --btn-shadow-color: #ddd;
+  
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+	background-color: var(--bg-color--dark);
+}
+.clear {
+	clear: both;
+}
+a {
+	text-decoration: none;
+}
+h1, h2 {
+	color: var(--article-title);
+}
+h1 {
+	text-align: center;
+	margin: 150px auto;
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+	padding-bottom: 20px;
+	background: linear-gradient(to right, #ddd, #5d5d5d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+h3 {
+	display:none;
+}
+p {
+	color: var(--thumbnail--description);
+	text-indent: 20px;
+	text-align: justify;
+}
+nav {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	float: right;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	padding: 0 15px;
+}
+nav ul li a {
+	color: var(--link);
+}
+nav ul li a:hover {
+	color: var(--link--hover);
+}
+nav ul li a:active {
+	color: var(--link--active);
+}
+section {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 200px;
+}
+article {
+	display: flex;
+}
+article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.col {
+	display: block;
+	float:left;
+	margin: 2%;
+}
+.text, .image {
+	width: 49.2%;
+}
+.image {
+	display: flex;
+}
+img {
+	width: 100%;
+	max-width: 800px;
+	height: 100%;
+}
+.up {
+	display: none;
+}
+@media only screen and (max-width: 991px){
+    nav {
+		margin:0;
+		padding:0;
+		left: 0;
+		right: 0;
+		text-align:center;
+	}
+	h1 {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	article {
+		display: inline-block;
+	}
+	.col {
+		width: 100%;
+	}
+	h2 {
+		font-size: 2em;
+	}
+}
+@media only screen and (max-width: 575px) {
+	html, body {
+		padding: 0;
+		margin: 0;
+	}
+	body {
+		background-color: var(--bg-color--light);
+	}
+	h1, h2 {
+		color: var(--article-title-dark);
+	}
+	h1 {
+		margin: 200px 5px 100px 5px;
+	}
+	h2 {
+		color: var(--article-title-dark);
+		background: linear-gradient(to right, #000, #000);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	section {
+		width: 100%;
+		margin: 2px;
+		margin-bottom: 200px;
+	}
+	.col {
+		width: 95%;
+		padding: 5px;
+	}
+	nav {
+		top: 0;
+	}
+	nav ul li {
+		display: block;
+		padding: 10px;
+		text-align: left;
+		border-bottom: 1px solid var(--navigation-border-bottom);
+	}
+	nav ul li a:active {
+		font-weight: bolder;
+		color: var(--link--active);
+	}
+	nav ul li a:hover {
+		font-weight: bolder;
+		color: var(--link--hover);
+	}
+	.up {
+		display: block;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		font-size: 23px;
+		border-radius: 50%;
+		background-color: var(--btn-bg-color);
+		color: var(--btn-color);
+		box-shadow: 10px 10px 20px var(--btn-shadow-color);
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		text-align: center;
+		text-decoration: none;
+	  }  
+}
