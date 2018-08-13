@@ -1,4 +1,4 @@
-:root {
+/*:root {
   --bg-color--dark: #0a1223;
   --bg-color--light: #fff;
   --link: #5d5d5d;
@@ -8,9 +8,6 @@
   --article-title--dark: #000;
   --thumbnail--description: #5d5d5d;
 
-  /* These styles are needed only for media query max-width: 575px */
-
-  /* The 'Up' button (circle button at right bottom corner) */
   --btn-color: #fff;
   --btn-bg-color: #5ebcff;
   --btn-shadow-color: #ddd;
@@ -18,7 +15,7 @@
   --navigation-border-bottom: #ddd;
   --thumbnail-title: #484747;
 }
-
+*/
 * {
 	margin: 0;
 	padding: 0;
@@ -26,7 +23,7 @@
 }
 body {
 	font-family: sans-serif;
-	background-color: var(--bg-color--dark);
+	background-color: #0a1223;
 }
 .clear {
 	clear: both;
@@ -35,7 +32,7 @@ a {
 	text-decoration: none;
 }
 h1, h2 {
-	color: var(--article-title);
+	color: #ddd;
 }
 h1 {
 	text-align: center;
@@ -49,11 +46,8 @@ h2 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-h3 {
-	display:none;
-}
 p {
-	color: var(--thumbnail--description);
+	color: #5d5d5d;
 	text-indent: 20px;
 	text-align: justify;
 }
@@ -71,13 +65,13 @@ nav ul li {
 	padding: 0 15px;
 }
 nav ul li a {
-	color: var(--link);
+	color: #5d5d5d;
 }
 nav ul li a:hover {
-	color: var(--link--hover);
+	color: #54597d;
 }
 nav ul li a:active {
-	color: var(--link--active);
+	color: #54597d;
 }
 section {
 	width: 80%;
@@ -137,14 +131,14 @@ img {
 		margin: 0;
 	}
 	body {
-		background-color: var(--bg-color--light);
+		background-color: #fff;
 	}
 	h1 {
-		color: var(--article-title-dark);
+		color: #000;
 		margin: 200px 5px 100px 5px;
 	}
 	h2 {
-		color: var(--thumbnail-title);
+		color: #484747;
 		background: linear-gradient(to right, #484747, #484747);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -165,15 +159,15 @@ img {
 		display: block;
 		padding: 10px;
 		text-align: left;
-		border-bottom: 1px solid var(--navigation-border-bottom);
+		border-bottom: 1px solid #ddd;
 	}
 	nav ul li a:active {
 		font-weight: bolder;
-		color: var(--link--active);
+		color: #54597d;
 	}
 	nav ul li a:hover {
 		font-weight: bolder;
-		color: var(--link--hover);
+		color: #54597d;
 	}
 	.up {
 		display: block;
@@ -182,9 +176,9 @@ img {
 		line-height: 70px;
 		font-size: 23px;
 		border-radius: 50%;
-		background-color: var(--btn-bg-color);
-		color: var(--btn-color);
-		box-shadow: 10px 10px 20px var(--btn-shadow-color);
+		background-color: #5ebcff;
+		color: #fff;
+		box-shadow: 10px 10px 20px #ddd;
 		position: fixed;
 		bottom: 20px;
 		right: 20px;
