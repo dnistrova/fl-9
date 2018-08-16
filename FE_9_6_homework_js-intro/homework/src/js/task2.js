@@ -8,7 +8,7 @@ let p = a+b+c;
 let s = Math.sqrt(p/2*(p/2-a)*(p/2-b)*(p/2-c));
 let message = '';
 
-if (a > 0 && b >0 && angle >0 && angle<=straightAngle) {
+if (a > 0 && b >0 && angle >0 && angle<straightAngle) {
 	message = 'a length: '+ Math.round(a * 100)/100 + 
 '\nb length: '+Math.round(b * 100)/100+
 '\nα-angle: '+ Math.round(angle * 100)/100+ 
