@@ -19,4 +19,4 @@ if (a > 0 && b >0 && angle >0 && angle<straightAngle) {
 	message = 'Invalid data';
 }
 
-console.log (message);
+console.log(message);
