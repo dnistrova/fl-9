@@ -1,7 +1,10 @@
 function getMin() {
-	var i;
+	let i;
+	let min= arguments[0];
 	for (i = 0; i < arguments.length; i++) {
-		var min = Math.min(arguments[i])
+		if(arguments[i] < min){
+            min = arguments[i];
+        }
 	}
 	return min;
 }
