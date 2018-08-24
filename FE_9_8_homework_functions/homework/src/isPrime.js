@@ -1,23 +1,11 @@
-function isPrime(i) {
-  if (i===1)
-  {
-    return false;
-  }
-  else if(i === 2)
-  {
-    return true;
-  }else
-  {
-    for(var x = 2; x < i; x++)
-    {
-      if(i % x === 0)
-      {
-        return false;
-      }
+function isPrime(value) {
+    for(let i = 2; i < value; i++) {
+        if(value % i === 0) {
+            return false;
+        }
     }
-    return true;  
-  }
+    return value > 1;
 }
 
-//isPrime(5); 
+//isPrime(5);
 
