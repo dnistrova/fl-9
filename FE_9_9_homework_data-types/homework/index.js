@@ -78,7 +78,9 @@ function getAdultAppleLovers (data) {
 function keys(object) {
 	let newArray = [];
     for(let key in object) {
-        newArray.push(key);
+        if(object.hasOwnProperty(key)) {
+            newArray.push(key);
+        }
     }
     return newArray;
 }
@@ -88,7 +90,9 @@ function keys(object) {
 function values(object) {
 	let newArray = [];
     for(let key in object) {
-        newArray.push(object[key]);
+        if(object.hasOwnProperty(key)) {
+            newArray.push(object[key]);
+        }
     }
     return newArray;
 }
