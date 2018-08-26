@@ -1,10 +1,7 @@
 function getClosestToZero() {
-    let number = 0,
-    closestToZero;
-    closestToZero = arguments[0];
-	let i;
-    for (i = 0; i < arguments.length; i++) {
-        if (Math.abs(number - arguments[i]) < Math.abs(number - closestToZero)) {
+    let closestToZero = arguments[0];
+    for (let i = 0; i < arguments.length; i++) {
+        if (Math.abs(0 - arguments[i]) < Math.abs(0 - closestToZero)) {
             closestToZero = arguments[i];
         }
     }
